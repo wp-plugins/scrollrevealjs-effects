@@ -8,9 +8,16 @@
 
 global $wpdb;
 $table_name = $wpdb->prefix . 'scrollrevealjs';
+$pages = get_all_page_ids();
+$current_page = get_the_ID();
 
-$items = $wpdb->get_results("SELECT * FROM $table_name");
-?>    
+if ( in_array( $current_page, $pages ) ) {
+    $items = $wpdb->get_results("SELECT * FROM $table_name WHERE page_id = $current_page");
+} else {
+    $items = $wpdb->get_results("SELECT * FROM $table_name");
+}
+
+?>
 <script type="text/javascript">
     <?php    
     foreach ($items as $item) {
@@ -26,9 +33,9 @@ $items = $wpdb->get_results("SELECT * FROM $table_name");
         if(!empty($item->over)) { $param .= 'over '.$item->over.'s, '; }
         if(!empty($item->reset)) { $param .= $item->reset; }
         
-        rtrim($param,",");
+        $param = rtrim($param,", ");
         
-        echo 'jQuery("'.$item->selector.'").attr("data-sr","'.$param.'");'."\n\t";
+        echo 'jQuery("#'.$item->selector.'").attr("data-sr","'.$param.'");'."\n\t";
     }
     ?>
 </script>
