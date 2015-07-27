@@ -1,9 +1,9 @@
-=== ScrollReveal.js Effects ===
+﻿=== ScrollReveal.js Effects ===
 Contributors: 7Jayme
 Tags: ScrollReveal.js, scroll, reveal, effects
 Requires at least: 4.2.2
 Tested up to: 4.2.2
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

@@ -3,7 +3,7 @@
 Plugin Name: ScrollReveal.js Effects
 Plugin URI: http://sr.cekuj.net
 Description: Use and manage scroll reveal effects using ScrollReveal.js right in WordPress
-Version: 1.1
+Version: 1.1.1
 Author: Jan Benedík
 Author URI: https://cz.linkedin.com/pub/jan-benedik/a0/84b/636
 Tags: ScrollReveal.js, scroll, reveal, effects
@@ -37,7 +37,7 @@ require_once dirname( __FILE__ ) . '/includes/edit.php';
 require_once dirname(__FILE__) . '/includes/simple_html_dom.php';
 
 global $scroll_reveal_js_db_version;
-$scroll_reveal_js_db_version = '1.1';
+$scroll_reveal_js_db_version = '1.0';
 
 function scroll_reveal_js_table_install()
 {
