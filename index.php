@@ -37,7 +37,7 @@ require_once dirname( __FILE__ ) . '/includes/edit.php';
 require_once dirname(__FILE__) . '/includes/simple_html_dom.php';
 
 global $scroll_reveal_js_db_version;
-$scroll_reveal_js_db_version = '1.0';
+$scroll_reveal_js_db_version = '1.1';
 
 function scroll_reveal_js_table_install()
 {

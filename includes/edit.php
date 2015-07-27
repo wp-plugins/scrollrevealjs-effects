@@ -150,7 +150,7 @@ function scroll_reveal_js_form_meta_box_handler($item)
 
     $dom = file_get_html($url);
     $divs = $dom->find('[id]');
-    $sorted = [];
+    $sorted = arra();
     foreach ($divs as $div) {
         array_push($sorted, $div->id);
     }
@@ -183,7 +183,7 @@ function scroll_reveal_js_form_meta_box_handler($item)
             <td>
                 <select id="enter" name="enter" style="width: 85%">
                     <?php
-                        $ways = ['left','top','right','bottom'];
+                        $ways = array('left','top','right','bottom');
                         foreach ($ways as $way) {
                             if($item['enter'] == $way) {
                                 echo '<option value="'.$way.'" selected>'.$way.'</option>';

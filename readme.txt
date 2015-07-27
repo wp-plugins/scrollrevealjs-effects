@@ -3,7 +3,7 @@ Contributors: 7Jayme
 Tags: ScrollReveal.js, scroll, reveal, effects
 Requires at least: 4.2.2
 Tested up to: 4.2.2
-Stable tag: 4.2.2
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,10 @@ Set using on mobile, starting element opacity etc.
 Check [ScrollReveal.js Configuration](https://github.com/julianlloyd/scrollReveal.js/wiki/Configuration "ScrollReveal.js Configuration") for informations
 
 == Changelog ==
+= 1.0 =
+
+* Array syntax errors fixed
+
 = 1.0 =
 
 * Initial version committed

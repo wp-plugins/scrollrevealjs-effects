@@ -119,7 +119,7 @@ function sr_configuration_viewport() {
 
 function sr_configuration_delay() {
     $options = get_option('sr_config');
-    $select_options = ['once','always']; ?>
+    $select_options = array('once','always'); ?>
     <select name="sr_config[delay]">
         <?php
         foreach ($select_options as $s) {
